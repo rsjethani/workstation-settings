@@ -1,0 +1,25 @@
+alias docker-clean="docker container prune -f ; docker image prune -f ; docker volume prune -f"
+
+# Make vim as the default editor for everything
+# export VISUAL=vim
+# export EDITOR="$VISUAL"
+
+# git completion and hint setup
+source ~/bin/git-prompt.sh
+PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWUPSTREAM="auto"
+GIT_PS1_SHOWCOLORHINTS=1
+
+# Rust env vars
+export PATH="$PATH:$HOME/.cargo/bin"
+
+# Go env vars
+export GOPATH=$HOME/work/go
+export GOBIN=$GOPATH/bin
+export PATH="$PATH:/usr/local/go/bin:$GOPATH:$GOBIN"
+
+export GPG_TTY=$(tty)
+

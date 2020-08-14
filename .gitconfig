@@ -1,0 +1,18 @@
+[user]
+	name = Ravi Shekhar Jethani
+	email = rsjethani@gmail.com
+	signingkey = XX949XXXX26XXXX3
+[alias]
+	cm = commit
+	st = status
+	br = branch
+	rb = rebase
+	last5 = log --oneline -5
+	last = log  -1
+	ps = push
+	co = checkout
+	cp = cherry-pick
+	last10 = log --oneline -10
+	last20 = log --oneline -20
+	rs = reset
+	fc = fetch
